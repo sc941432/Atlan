@@ -2,6 +2,8 @@
 ## evently  ------Contains Backend logic.
 ## evently-frontdoor ---- it contains Frontend.
 
+## this readme is for basic overview only, For more details please go through each repo README files please.
+
 **Production-grade REST API for event browsing, seat-aware ticket booking, waitlists, and admin analytics.**  
 Backed by **FastAPI**, **PostgreSQL**, **SQLAlchemy**, **Alembic**, **Redis**, **JWT**, and **Prometheus** metrics.
 
