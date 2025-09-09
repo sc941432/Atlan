@@ -1,0 +1,15 @@
+# Minimal monorepo hints so Railway treats each folder as its own service
+[projects.default]
+name = "atlan-evently"
+
+# --- Backend (FastAPI) ---
+[services.api]
+root = "evently"
+# Nixpacks will detect Python; these commands avoid changing any code.
+startCommand  = "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+deployCommand = "alembic upgrade head"
+
+# --- Frontend (Vite) ---
+# We'll make this a Static service in the UI; the root just helps Railway detect it.
+[services.frontend]
+root = "evently-frontdoor"
